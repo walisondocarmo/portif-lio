@@ -211,7 +211,7 @@ footer img{
     main{
         display: flex;
         flex-direction: column;
-        padding: 0;
+        padding: 15px;
         margin-top: 200px;
         justify-content: center;
     }
