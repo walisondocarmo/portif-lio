@@ -181,6 +181,11 @@ footer{
     text-align: center;
     background-color: black;
 }
+footer img{
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
 
 @media screen and (max-width: 760px){
     header{
