@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walison Do Carmo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <p>Desenvolvedor Web</p>
+        </div>
+
+        <div>
+
+            <a href="#Home">Home</a>
+            <a class="sumir" href="#Tecnologias">Tecnologias</a>
+            <a href="#Serviços">Serviços</a>
+            <a href="#Projetos">Projetos</a>
+            <a href="#Contato">Contato</a>
+
+        </div>
+    </header>
+
+    <main id="Home">
+        <div>
+            <h1 class="nome1">Walison Do Carmo</h1>
+            <h2 class="nome">Desenvolvedor Web Full Stack</h2>
+            <p>
+                Sou um desenvolvedor web Full Stack apaixonado por transformar ideias em realidade digital. Com minha experiência e conhecimento abrangente em tecnologias de ponta, estou pronto para construir a presença online dos seus sonhos.
+            </p>
+        </div>
+
+        <div>
+            <img src="imgs/foto.png" alt="">
+
+        </div>
+    </main>
+
+
+    <section data-anima="esquerda" class="tecnologias" id="Tecnologias">
+        <h3>Tecnologias Que Utilizo</h3>
+
+        
+        <div class="divt">
+            <img class="imgb" src="imgs/html-5.png" alt="html">
+            <img src="imgs/css-3.png" alt="css">
+            <img src="imgs/js.png" alt="js">
+            <img src="imgs/bootstrap.png" alt="bootstrap">
+            <img src="imgs/react.png" alt="">
+            <img src="imgs/node-js.png" alt="node">
+            <img src="imgs/mysql.png" alt="">
+            <img src="imgs/git.png" alt="git">
+
+
+        </div>
+
+    </section>
+    <h3 class="titulo2">Serviços</h3>
+    <section class="serviços" id="Serviços">
+
+       <div data-anima="esquerda">
+        <img class="imgs" src="imgs/internet.png" alt="internet">
+        <h3 class="titulo1">Desenvolvimento de sites</h3>
+
+        <p>Desenvolvimento de websites impactantes: Criarei um site totalmente personalizado que representa a essência da sua marca, cativando seus visitantes e convertendo-os em clientes fiéis.</p>
+       </div>
+        
+       <div data-anima="esquerda">
+        <img class="imgs" src="imgs/php-code.png" alt="php">
+        <h3 class="titulo1">Design responsivo</h3>
+
+        <p> Deixamos seu site leve e compativel com todos os tipos de dispositivos desde computadores a tablets e celulares</p>
+      
+       </div>
+
+       <div data-anima="esquerda">
+        <img class="imgs" src="imgs/code.png" alt="code">
+        <h3 class="titulo1">Sistemas web completos</h3>
+        <p>Crio sistemas web completos desde a parte visual até o sistema backend com as tecnologias mais modernas do mercado</p>
+
+       </div>
+    </section>
+
+    <h3 class="titulo2">Projetos Finalizados</h3>
+
+    <section id="Projetos">
+
+        <div data-anima="esquerda" class="divp">
+            <img src="imgs/landdingpage.png" alt="site3">
+
+            <h3>Ladding-page criada com html e css</h3>
+
+            <a class="linkp" href="https://walisondocarmo.github.io/laddingpage2/" target="_blank">Acessar</a>
+
+        </div>
+       
+        <div data-anima="esquerda" class="divp">
+            <img src="imgs/site1.png" alt="site1">
+
+            <h3>Ladding page criada com html e css</h3>
+
+            <a class="linkp" href="https://walisondocarmo.github.io/landding-page/" target="_blank">Acessar</a>
+        </div>
+
+        <div data-anima="esquerda" class="divp">
+            <img src="imgs/site-bootstrap.png" alt="site1">
+
+            <h3>Site criado com bootstrap</h3>
+
+            <a class="linkp" href="https://walisondocarmo.github.io/site-bootstrap3/" target="_blank">Acessar</a>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <address id="Contato">
+            <p>email : silvawalison@gmail.com</p>
+        </address>
+    </footer>
+    
+    <script>
+
+        const elementos = document.querySelectorAll('[data-anima]')
+        const animacaoClass = 'animacao'
+
+        function animaScroll(){
+            const topoPaginaNaJanela = window.pageYOffset+((window.innerHeight*3)/4)
+            elementos.forEach(function(elemento){
+                if(topoPaginaNaJanela > elemento.offsetTop){
+                    elemento.classList.add(animacaoClass)
+                }else{
+                    elemento.classList.remove(animacaoClass)
+
+                }
+            })
+        }
+
+        if(elementos.length){
+            window.addEventListener('scroll',function(){
+                animaScroll()
+            })
+        }
+
+
+    </script>
+</body>
+</html>

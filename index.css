@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(24, 23, 23);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+}
+header p{
+    font-size: 25px;
+    font-weight: bold;
+}
+header a{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    margin: 5;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+header a:hover{
+    background-color: white;
+    color: blue;
+}
+main{
+    padding: 150px;
+    color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main p{
+    max-width: 400px;
+    color: white;
+    margin-top: 15px;
+}
+main img{
+    width: 70%;
+}
+.nome1{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    
+}
+.tecnologias{
+    background: linear-gradient(to bottom ,blue , black);
+    margin: 120px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+.tecnologias div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    
+
+}
+.tecnologias img{
+    width: 10%;
+}
+.serviços{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.serviços div{
+    width: 25%;
+    height: 300px;
+    background: linear-gradient(to bottom, blue, black);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgb(255, 255, 255);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: -1;
+}
+.serviços div:hover{
+    background: rgb(27, 172, 250);
+    color: black;
+}
+.titulo1{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.titulo2{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: white;
+    padding-top: 100px;
+}
+.imgs{
+    width: 50px;
+}
+#Projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    flex-wrap: wrap;
+
+    
+}
+.divp{
+    width: 30%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    height: 300px;
+    background-color: rgb(2, 23, 92);
+    box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.57);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background: linear-gradient(to bottom, blue, black);
+    z-index: 1;
+}
+.divp img{
+    width: 100%;
+    
+}
+.divp h3{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.linkp{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: blue;
+}
+
+[data-anima]{
+    opacity: 0;
+    transition: .8s;
+
+}
+[data-anima="esquerda"]{
+    transform: translate(-50px,0,0);
+}
+[data-anima].animacao{
+    will-change: transform;
+    opacity: 1;
+    transform: translate(0,0,0);
+}
+
+
+
+footer{
+    color: white;
+    padding-top: 70px;
+    height: 300px;
+    text-align: center;
+    background-color: black;
+}
+
+@media screen and (max-width: 760px){
+    header{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 30px;
+        top: 0;
+
+        
+    }
+    header div{
+        margin-bottom: 15px;
+    }
+    header a{
+        border-bottom: 6px solid blue;
+        border-radius: 0;
+        background-color: black;
+        color: blue;
+    }
+    .sumir{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 200px;
+        justify-content: center;
+    }
+    main div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    main img{
+        margin: auto;
+    }
+    .tecnologias{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    .tecnologias img{
+        width: 20%;
+        margin: 10px
+    }
+    .divt{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .serviços{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        padding: 0;
+    }
+    .serviços div{
+        margin: 0;
+        width: 95%;
+        margin: 10px auto;
+        
+    }
+    #Projetos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .divp{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    /*animaçoes*/
+
+    
+}
