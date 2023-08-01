@@ -63,7 +63,6 @@ main img{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    height: 250px;
     padding: 20px;
     justify-content: space-around;
     align-items: center;
